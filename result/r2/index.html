@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>result</title>
+</head>
+<body>
+    <input type="text" name=""id="name" placeholder="Enter your Name">
+    <button type="submit"id="submit" onclick="result()">CHECK</button>
+    <p id="result"></p>
+
+    <script>
+        function result(){
+            const name=document.getElementById('name');
+            var mark=Math.random()*100;
+            var result=document.getElementById('result');
+
+
+            if(marks<35 ){
+                result.innerHTML="your result is F";
+            }else if(marks==35){
+                result.innerHTML="Your result is just pass";
+            }else if(marks>=51 && marks<75)
+            {
+                result.innerHTML="your result is first class";
+            }else if(marks>=76 && marks<100)
+            {
+                result.innerHTML="distenstion";
+            }
+        }
+    </script>
+</body>
+</html>

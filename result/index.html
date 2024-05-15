@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <center>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+    <h1>RELATIONSHIP</h1>
+</center>
+<br>
+<br>
+<center>
+    <input type="text" name="" id="name" placeholder="enter your name">
+    <input type="text" name="" id="name" placeholder="enter your crush name">
+</center>
+<br>
+<center>
+    <button type="submit" id="submit" onclick="result()">check</button>
+</center>
+<center><h2>probability of getting with relation ship is:</h2>
+<br></center>
+
+
+<center><p id="result"></p></center>
+
+ <script >
+        function result(){
+            const name = document.getElementById('name');
+            const crush = document.getElementById('crush');
+            var marks =Math.random()*100;
+            var result = document.getElementById('result');
+result.innerHTML=""+""+marks;
+        }
+    </script>
+   
+</body>
+</html>
